@@ -9,5 +9,5 @@ void main() {
   vec3 transformed = position;
   transformed.z += sin(position.y + time);
 
-  gl_Position = projectionMatrix * modelViewMatrix * vec4(transformed, 1.0);
+  gl_Position = projectionMatrix * modelViewMatrix * vec4(transformed, 2.0);
 }
